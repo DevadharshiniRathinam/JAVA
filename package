@@ -1,0 +1,43 @@
+package calculator;
+
+public class calculate {
+	public void addition(int a,int b)
+	{
+		System.out.println("Add:"+(a+b));
+	}
+	public void subraction(int a,int b)
+	{
+		System.out.println("Subraction:"+(a-b));
+	}
+
+	public void multiplation(int a,int b)
+	{
+		System.out.println("multiplation:"+(a*b));
+	}
+
+	public void division(int a,int b)
+	{
+		System.out.println("division:"+(a/b));
+	}
+
+}
+
+
+package calvalue;
+import  calculator.calculate;
+import java.util.*;
+public class calculatevalue {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter values");
+		int a=s.nextInt();
+		int b=s.nextInt();
+		calculate c=new calculate();
+		c.addition( a, b);
+		c.subraction( a, b);
+		c.multiplation( a, b);
+		c.division( a, b);
+	}
+
+}

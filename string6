@@ -1,0 +1,28 @@
+package string;
+/* given two string return the reverse the second string and print
+ input:
+ hello
+world
+op:
+hellodlrow
+ */
+import java.util.*;
+import java.lang.String;
+public class str {
+	public static void main(String[] arg)
+	{
+		Scanner s=new Scanner(System.in);
+		String s1=s.nextLine();
+		String s2=s.nextLine();
+		char[] c=s2.toCharArray();
+		int q=0;
+		char[] c1=new char[s2.length()];
+		for(int i=s2.length()-1;i>=0;i--)
+		{
+			c1[q++]=c[i];
+		}
+		String s3=String.valueOf(c1);
+		System.out.println(s1+s3);
+	}
+
+}

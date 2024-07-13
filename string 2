@@ -1,0 +1,41 @@
+package String;
+/*this program where two string get from user and check if the
+ *  second string present in first the print the value of first string which not present in the second string
+ * input:
+ * deva
+dharshini
+output:
+e
+v
+ */
+import java.util.*;
+public class str2 {
+	public static void main(String[] arg)
+	{
+		Scanner s=new Scanner(System.in);
+		String s1=s.nextLine();
+		String s2=s.nextLine();
+		char[] c=s1.toCharArray();
+		char[] c1=s2.toCharArray();
+		int l=s1.length();
+		int l1=s2.length();
+		int count=0;
+		for(int i=0;i<l;i++)
+		{
+			for(int j=0;j<l1;j++)
+			{
+			if( c[i]==c1[j])
+				{
+					 count=1;
+				}
+		    }
+		if(count==0)
+		{
+		System.out.println(c[i]);
+		}
+		count=0;
+		}
+	}
+
+}
+

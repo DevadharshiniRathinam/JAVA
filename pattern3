@@ -1,0 +1,24 @@
+package pattern;
+
+public class prattern1 {
+	public static void main(String[] arg)
+	{ 
+		char c[]= {'@','?','>'};
+		for(int i=0;i<c.length;i++)
+		{
+			for(int j=0;j<c.length;j++)
+			{
+				System.out.print(c[i]);
+			}
+			System.out.println();
+			
+		}
+			
+	}
+
+}
+/*
+@@@
+???
+>>>
+*/

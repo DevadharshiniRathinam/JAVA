@@ -1,0 +1,20 @@
+package String;
+import java.lang.String;
+import java.util.Scanner;
+// tis program is about print the first leetter of word in given String
+//input;java is demo
+//op;jid
+public class str6 {
+	public static void main(String[] arg)
+	{
+		Scanner s=new Scanner(System.in);
+		String s1=s.nextLine();
+		String[] s2=s1.split(" ");
+		for(int i=0;i<s2.length;i++)
+		{
+			char[]c=s2[i].toCharArray();
+			System.out.print(c[0]);
+		}
+		
+	}
+}

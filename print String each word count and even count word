@@ -1,0 +1,42 @@
+package String;
+import java.lang.String;
+import java.util.Scanner;
+// this program is about print the count of each of word in given String and print the even count string
+//input;java is good programming language
+/*op;
+java:4
+is:2
+good:4
+programming:11
+language:8
+even length word
+java
+is
+good
+language
+ */
+public class Str7 {
+	public static void main(String[] arg)
+	{
+		int q=0,count=0;
+		Scanner s=new Scanner(System.in);
+		String s1=s.nextLine();
+		String[] s2=s1.split(" ");
+		String[] s3=new String[s2.length];
+		for(int i=0;i<s2.length;i++)
+		{
+			System.out.println(s2[i]+":"+s2[i].length());
+	        if(s2[i].length()%2==0) 
+	        { count+=1;
+	         s3[q++]=s2[i];
+	        }
+		}
+		System.out.println("even length word");
+		for(int i=0;i<count;i++)
+		{
+			System.out.println(s3[i]);
+		}
+		
+	}
+}
+

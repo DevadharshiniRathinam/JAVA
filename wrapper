@@ -1,0 +1,38 @@
+package number;
+//wrapper class 
+import java.util.Scanner;
+
+public class num4 {
+	public static void main(String[] arg)
+	{
+		Scanner s=new Scanner(System.in);
+		//value in the primitive
+	    	byte i2=10;  
+	    	short i3=20;  
+	    	int i4=30;  
+	    	long i5=1123446798;  
+	    	float i6=50.0F;  
+	    	double i7=60.0D;  
+	    	char i8='a';  
+	    	boolean i9=true;  
+	    	// primitive object
+	    	Byte j2=i2;  
+	    	Short j3=i3;  
+	    	Integer j4=i4;  
+	    	Long j5=i5;  
+	    	Float j6=i6;  
+	    	Double j7=i7;  
+	    	Character j8=i8;  
+	    	Boolean j9=i9;
+	    
+	    System.out.println(j2);
+	    System.out.println(j3);
+	    System.out.println(j4);
+	    System.out.println(j5);
+	    System.out.println(j6);
+	    System.out.println(j7);
+	    System.out.println(j8);
+	    System.out.println(j9);
+	}
+
+}

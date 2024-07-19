@@ -1,0 +1,24 @@
+package String;
+import java.util.*;
+//this program to print even ascii value
+//ip:dAjr8431ldczbxhzcSr?<;
+/*op:even ascii value:
+    djr84ldzbxhzr<*/
+
+public class STR10 {
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		String s1=s.nextLine();
+		char []c=s1.toCharArray();
+		System.out.println("even ascii value:");
+		for(int i=0;i<s1.length();i++)
+		{
+			if((int)c[i]%2==0)
+			{
+				System.out.println(c[i]);
+			}
+		}
+	}
+
+}

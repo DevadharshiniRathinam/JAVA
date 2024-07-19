@@ -1,0 +1,38 @@
+CREATE TABLE Marks (
+    std_id VARCHAR2(50),
+    mark1 INT,
+    mark2 INT,
+    mark3 INT,
+    total INT,
+    average INT,
+    grade VARCHAR2(50)
+);
+
+INSERT INTO Marks (std_id, mark1, mark2, mark3, total, average, grade) VALUES ('1', 76, 89, 82, 247, 82, 'A');
+INSERT INTO Marks (std_id, mark1, mark2, mark3, total, average, grade) VALUES ('2', 56, 76, 69, 201, 67, 'B');
+INSERT INTO Marks (std_id, mark1, mark2, mark3, total, average, grade) VALUES ('3', 99, 98, 90, 287, 96, 'A');
+
+SELECT * FROM Marks;
+
+STD_ID	MARK1	MARK2	MARK3	TOTAL	AVERAGE	GRADE
+1	76	89	82	247	82	A
+2	56	76	69	201	67	B
+3	99	98	90	287	96	A
+
+CREATE TABLE Student (
+    id NUMBER PRIMARY KEY,
+    name VARCHAR2(100),
+    age NUMBER,
+    dob DATE,
+    phno VARCHAR2(15)
+);
+
+INSERT INTO Student (id, name, age, dob, phno) VALUES (1, 'John Doe', 20, TO_DATE('2002-01-15', 'YYYY-MM-DD'), '1234567890');
+INSERT INTO Student (id, name, age, dob, phno) VALUES (2, 'Jane Smith', 22, TO_DATE('2000-02-20', 'YYYY-MM-DD'), '0987654321');
+INSERT INTO Student (id, name, age, dob, phno) VALUES (3, 'Michael Johnson', 21, TO_DATE('2001-05-25', 'YYYY-MM-DD'), '1122334455');
+
+SELECT * FROM Student;
+ID	NAME	AGE	DOB	PHNO
+1	John Doe	20	15-JAN-02	1234567890
+2	Jane Smith	22	20-FEB-00	0987654321
+3	Michael Johnson	21	25-MAY-01	1122334455

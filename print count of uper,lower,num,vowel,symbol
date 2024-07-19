@@ -1,0 +1,54 @@
+package String;
+import java.util.*;
+// this program for to check the string count of uppercase,lowercase,number,vowel,symbol;
+// ip: 1@DecaGE323!
+/*op:
+uppercase:3
+lowercase:3
+number:4
+vowel:3
+symbol:2
+*/
+public class str9 {
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		String s1=s.nextLine();
+		String []s2=s1.split(" ");
+		for(int i=0;i<s2.length;i++)
+		{
+			int count=0,count1=0,count2=0,count3=0,count4=0;
+			char[] c=s2[i].toCharArray();
+			char c1[]= {'a','e','i','o','u'};
+			for(int j=0;j<s2[i].length();j++)
+			{
+				if(c[j]>66&&c[j]<91)
+				{
+					count++;;
+				}
+				else if(c[j]>96&&c[j]<123)
+				{
+					count1++;
+				}
+				else if(c[j]>47&&c[j]<58)
+				{
+					count2++;
+				}
+				else
+				{
+					count4++;
+				}
+				char c2=Character.toLowerCase(c[j]);
+				for(int k=0;k<5;k++)
+				{
+				 if(c2==c1[k])
+				{
+					count3++;
+				}
+				}
+			}
+			System.out.println("uppercase:"+count+"\n"+"lowercase:"+count1+"\n"+"number:"+count2+"\n"+"vowel:"+count3+"\n"+"symbol:"+count4+"\n"+"Space:"+(s2.length-1));
+		}
+		
+	}
+}

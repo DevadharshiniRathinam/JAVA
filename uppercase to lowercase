@@ -1,0 +1,32 @@
+package String;
+import java.util.*;
+// this program for change value of lower to upper case and viceversa
+// ip: Hello World
+// op: hELLO wORLD 
+public class str8 {
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		String s1=s.nextLine();
+		String []s2=s1.split(" ");
+		for(int i=0;i<s2.length;i++)
+		{
+			char[] c=s2[i].toCharArray();
+			for(int j=0;j<s2[i].length();j++)
+			{
+			if(c[j]>66&&c[j]<91)
+			{
+				c[j]=Character.toLowerCase(c[j]);
+				System.out.print(c[j]);
+			}
+			else
+			{
+				c[j]=Character.toUpperCase(c[j]);
+				System.out.print(c[j]);
+			}
+			}
+			System.out.print(" ");
+		}
+	}
+
+}

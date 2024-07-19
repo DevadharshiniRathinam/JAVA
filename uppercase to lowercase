@@ -14,7 +14,7 @@ public class str8 {
 			char[] c=s2[i].toCharArray();
 			for(int j=0;j<s2[i].length();j++)
 			{
-			if(c[j]>66&&c[j]<91)
+			if(c[j]>64&&c[j]<91)
 			{
 				c[j]=Character.toLowerCase(c[j]);
 				System.out.print(c[j]);
